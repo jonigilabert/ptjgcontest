@@ -1011,6 +1011,309 @@ body:has(#css-lang-tr:checked) .count-box > span.lang-tr{
 }
 </style>
 
+
+<style id="ptjg-trading-hero-marker">
+.ptjg-trading-marker{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:22px 0 8px;
+  width:max-content;
+  max-width:100%;
+  padding:10px 14px;
+  border:1px solid rgba(239,213,79,.38);
+  border-radius:999px;
+  background:rgba(239,213,79,.035);
+  color:#f1d952;
+  font-weight:800;
+  letter-spacing:.02em;
+}
+.ptjg-trading-marker svg{width:30px;height:30px;flex:0 0 30px}
+.ptjg-trading-marker .trophy{width:26px;height:26px;flex:0 0 26px}
+@media(max-width:700px){
+  .ptjg-trading-marker{gap:10px;padding:8px 12px;margin-top:16px}
+  .ptjg-trading-marker svg{width:26px;height:26px;flex-basis:26px}
+  .ptjg-trading-marker .trophy{width:23px;height:23px;flex-basis:23px}
+}
+</style>
+
+
+
+
+
+<style id="ptjg-podium-pro-style">
+.ptjg-hero-title-row{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:18px;
+  max-width:100%;
+}
+.ptjg-hero-title-row h1{
+  flex:1 1 auto;
+  min-width:0;
+  margin-bottom:0;
+}
+.ptjg-podium-emblem{
+  position:relative;
+  flex:0 0 116px;
+  height:112px;
+  margin-bottom:8px;
+  border:1px solid rgba(239,213,79,.26);
+  border-radius:24px;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.018),rgba(255,255,255,.004)),
+    radial-gradient(circle at 50% 20%,rgba(239,213,79,.12),transparent 62%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.025),
+    0 18px 44px rgba(0,0,0,.32),
+    0 0 34px rgba(239,213,79,.035);
+  overflow:hidden;
+}
+.ptjg-podium-stage{
+  position:absolute;
+  left:15px;
+  right:15px;
+  bottom:22px;
+  height:64px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  gap:4px;
+}
+.ptjg-podium-step{
+  position:relative;
+  width:25px;
+  border:1px solid rgba(239,213,79,.42);
+  border-bottom:none;
+  background:linear-gradient(180deg,rgba(239,213,79,.20),rgba(239,213,79,.055));
+  box-shadow:inset 0 0 18px rgba(239,213,79,.035);
+}
+.ptjg-podium-step.first{height:56px;border-radius:7px 7px 0 0}
+.ptjg-podium-step.second{height:40px;border-radius:7px 7px 0 0}
+.ptjg-podium-step.third{height:31px;border-radius:7px 7px 0 0}
+.medal-num{
+  position:absolute;
+  top:7px;
+  left:50%;
+  transform:translateX(-50%);
+  width:17px;
+  height:17px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:9px;
+  font-weight:900;
+  color:#090909;
+  background:#efd54f;
+  box-shadow:0 0 10px rgba(239,213,79,.18);
+}
+.ptjg-podium-step.second .medal-num{
+  background:#d8d8d8;
+}
+.ptjg-podium-step.third .medal-num{
+  background:#b77a3a;
+}
+.ptjg-podium-base{
+  position:absolute;
+  left:13px;
+  right:13px;
+  bottom:16px;
+  height:6px;
+  border-radius:999px;
+  background:linear-gradient(90deg,rgba(239,213,79,.18),#efd54f,rgba(239,213,79,.18));
+  box-shadow:0 0 16px rgba(239,213,79,.15);
+}
+.ptjg-podium-crown{
+  position:absolute;
+  top:12px;
+  left:50%;
+  transform:translateX(-50%);
+  width:36px;
+  height:16px;
+}
+.ptjg-podium-crown:before{
+  content:"";
+  position:absolute;
+  left:3px;
+  right:3px;
+  bottom:0;
+  height:6px;
+  border-radius:3px;
+  background:#efd54f;
+  opacity:.95;
+}
+.ptjg-podium-crown span{
+  position:absolute;
+  bottom:5px;
+  width:10px;
+  height:10px;
+  background:#efd54f;
+  transform:rotate(45deg);
+  border-radius:2px 2px 1px 2px;
+}
+.ptjg-podium-crown span:nth-child(1){left:4px}
+.ptjg-podium-crown span:nth-child(2){left:13px;bottom:8px}
+.ptjg-podium-crown span:nth-child(3){right:4px}
+@media(max-width:700px){
+  .ptjg-hero-title-row{
+    gap:10px;
+    align-items:flex-start;
+  }
+  .ptjg-podium-emblem{
+    flex-basis:88px;
+    height:88px;
+    border-radius:19px;
+    margin-top:8px;
+    margin-bottom:0;
+  }
+  .ptjg-podium-stage{
+    left:11px;
+    right:11px;
+    bottom:18px;
+    height:50px;
+    gap:3px;
+  }
+  .ptjg-podium-step{width:19px}
+  .ptjg-podium-step.first{height:44px}
+  .ptjg-podium-step.second{height:31px}
+  .ptjg-podium-step.third{height:24px}
+  .medal-num{
+    width:14px;height:14px;font-size:7px;top:5px
+  }
+  .ptjg-podium-base{left:10px;right:10px;bottom:13px;height:5px}
+  .ptjg-podium-crown{top:9px;transform:translateX(-50%) scale(.8)}
+}
+@media(max-width:430px){
+  .ptjg-podium-emblem{
+    flex-basis:78px;
+    height:80px;
+  }
+}
+</style>
+
+
+<style id="ptjg-podium-clean-final">
+.ptjg-hero-title-row{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:18px!important;
+}
+
+.ptjg-podium-emblem{
+  flex:0 0 108px!important;
+  width:108px!important;
+  height:88px!important;
+  margin:42px 0 0 0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+
+.ptjg-podium-crown{
+  display:none!important;
+}
+
+.ptjg-podium-stage{
+  left:5px!important;
+  right:5px!important;
+  bottom:10px!important;
+  height:68px!important;
+  gap:5px!important;
+}
+
+.ptjg-podium-step{
+  width:28px!important;
+  border:1px solid rgba(239,213,79,.48)!important;
+  border-bottom:none!important;
+  background:linear-gradient(180deg,rgba(239,213,79,.18),rgba(239,213,79,.045))!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.025),
+    0 0 15px rgba(239,213,79,.035)!important;
+}
+
+.ptjg-podium-step.first{
+  height:62px!important;
+  border-radius:8px 8px 0 0!important;
+}
+.ptjg-podium-step.second{
+  height:44px!important;
+  border-radius:8px 8px 0 0!important;
+}
+.ptjg-podium-step.third{
+  height:34px!important;
+  border-radius:8px 8px 0 0!important;
+}
+
+.medal-num{
+  top:8px!important;
+  width:19px!important;
+  height:19px!important;
+  font-size:10px!important;
+  font-weight:900!important;
+  box-shadow:none!important;
+}
+
+.ptjg-podium-base{
+  left:2px!important;
+  right:2px!important;
+  bottom:5px!important;
+  height:5px!important;
+  background:linear-gradient(90deg,transparent,#efd54f 18%,#efd54f 82%,transparent)!important;
+  box-shadow:none!important;
+}
+
+@media(max-width:700px){
+  .ptjg-hero-title-row{
+    align-items:center!important;
+  }
+  .ptjg-podium-emblem{
+    flex-basis:84px!important;
+    width:84px!important;
+    height:76px!important;
+    margin-top:34px!important;
+  }
+  .ptjg-podium-stage{
+    left:3px!important;
+    right:3px!important;
+    bottom:9px!important;
+    height:56px!important;
+    gap:3px!important;
+  }
+  .ptjg-podium-step{
+    width:22px!important;
+  }
+  .ptjg-podium-step.first{height:51px!important}
+  .ptjg-podium-step.second{height:36px!important}
+  .ptjg-podium-step.third{height:28px!important}
+  .medal-num{
+    top:6px!important;
+    width:16px!important;
+    height:16px!important;
+    font-size:8px!important;
+  }
+  .ptjg-podium-base{
+    bottom:4px!important;
+    height:4px!important;
+  }
+}
+
+@media(max-width:430px){
+  .ptjg-podium-emblem{
+    flex-basis:76px!important;
+    width:76px!important;
+    height:70px!important;
+    margin-top:38px!important;
+  }
+  .ptjg-podium-step{
+    width:20px!important;
+  }
+}
+</style>
+
 </head><body>
 
 <div class="ptjg-aa-energy" aria-hidden="true">
@@ -1049,7 +1352,23 @@ body:has(#css-lang-tr:checked) .count-box > span.lang-tr{
 <label for="css-lang-ro">🇷🇴 Română</label>
 <label for="css-lang-tr">🇹🇷 Türkçe</label>
 </div></details></div></header>
-<section class="hero"><div class="live"><span class="dot"></span><span data-k="live"><span class="lang-text lang-es">EN VIVO AHORA · NOVIEMBRE 2026</span><span class="lang-text lang-en">LIVE NOW · NOVEMBER 2026</span><span class="lang-text lang-de">JETZT LIVE · NOVEMBER 2026</span><span class="lang-text lang-fr">EN DIRECT · NOVEMBRE 2026</span><span class="lang-text lang-pt">AO VIVO · NOVEMBRO 2026</span><span class="lang-text lang-ro">LIVE ACUM · NOIEMBRIE 2026</span><span class="lang-text lang-tr">ŞİMDİ CANLI · KASIM 2026</span></span></div><h1><span data-k="start"><span class="lang-text lang-es">Ya empezó.</span><span class="lang-text lang-en">It's live.</span><span class="lang-text lang-de">Es hat begonnen.</span><span class="lang-text lang-fr">C'est parti.</span><span class="lang-text lang-pt">Já começou.</span><span class="lang-text lang-ro">A început.</span><span class="lang-text lang-tr">Başladı.</span></span><br><span class="accent" data-k="win"><span class="lang-text lang-es">Aún puedes ganar.</span><span class="lang-text lang-en">You can still win.</span><span class="lang-text lang-de">Du kannst noch gewinnen.</span><span class="lang-text lang-fr">Vous pouvez encore gagner.</span><span class="lang-text lang-pt">Ainda podes ganhar.</span><span class="lang-text lang-ro">Încă poți câștiga.</span><span class="lang-text lang-tr">Hâlâ kazanabilirsin.</span></span></h1><p class="lead" data-k="hero"><span class="lang-text lang-es">Premios cada semana, ranking mensual y un gran sorteo final con iPhone 18, MacBook y $5.000.</span><span class="lang-text lang-en">Weekly prizes, a monthly ranking and a grand final giveaway with an iPhone 18, MacBook and $5,000.</span><span class="lang-text lang-de">Wöchentliche Preise, Monatsranking und ein großes Finale mit iPhone 18, MacBook und 5.000 $.</span><span class="lang-text lang-fr">Prix chaque semaine, classement mensuel et grand tirage final avec iPhone 18, MacBook et 5 000 $.</span><span class="lang-text lang-pt">Prémios semanais, ranking mensal e grande sorteio final com iPhone 18, MacBook e $5.000.</span><span class="lang-text lang-ro">Premii săptămânale, clasament lunar și o mare extragere finală cu iPhone 18, MacBook și 5.000 $.</span><span class="lang-text lang-tr">Her hafta ödüller, aylık sıralama ve iPhone 18, MacBook ve 5.000 $ büyük final çekilişi.</span></p><div class="hero-actions">
+<section class="hero"><div class="live"><span class="dot"></span><span data-k="live"><span class="lang-text lang-es">EN VIVO AHORA · CONCURSO NOVIEMBRE 2026</span><span class="lang-text lang-en">LIVE NOW · NOVEMBER 2026 TRADING CONTEST</span><span class="lang-text lang-de">JETZT LIVE · TRADING-WETTBEWERB NOVEMBER 2026</span><span class="lang-text lang-fr">EN DIRECT · CONCOURS TRADING NOVEMBRE 2026</span><span class="lang-text lang-pt">AO VIVO · CONCURSO DE TRADING NOVEMBRO 2026</span><span class="lang-text lang-ro">LIVE ACUM · CONCURS TRADING NOIEMBRIE 2026</span><span class="lang-text lang-tr">ŞİMDİ CANLI · KASIM 2026 TRADING YARIŞMASI</span></span></div><div class="ptjg-hero-title-row"><h1><span data-k="start"><span class="lang-text lang-es">Ya empezó el mejor concurso de traders.</span><span class="lang-text lang-en">The best traders contest is live.</span><span class="lang-text lang-de">Der beste Trading-Wettbewerb hat begonnen.</span><span class="lang-text lang-fr">Le meilleur concours de traders a commencé.</span><span class="lang-text lang-pt">O melhor concurso de traders já começou.</span><span class="lang-text lang-ro">Cel mai bun concurs de traderi a început.</span><span class="lang-text lang-tr">En iyi trader yarışması başladı.</span></span><br><span class="accent" data-k="win"><span class="lang-text lang-es"></span><span class="lang-text lang-en"></span><span class="lang-text lang-de"></span><span class="lang-text lang-fr"></span><span class="lang-text lang-pt"></span><span class="lang-text lang-ro"></span><span class="lang-text lang-tr"></span></span></h1>
+<div class="ptjg-podium-emblem" aria-hidden="true">
+<div class="ptjg-podium-stage">
+    <div class="ptjg-podium-step second">
+      <div class="medal-num">2</div>
+    </div>
+    <div class="ptjg-podium-step first">
+      <div class="medal-num">1</div>
+    </div>
+    <div class="ptjg-podium-step third">
+      <div class="medal-num">3</div>
+    </div>
+  </div>
+  <div class="ptjg-podium-base"></div>
+</div>
+</div>
+<p class="lead" data-k="hero"><span class="lang-text lang-es">Compite cada semana, entra en el ranking mensual y participa en el gran sorteo final.</span><span class="lang-text lang-en">Compete every week, enter the monthly ranking and take part in the grand final giveaway.</span><span class="lang-text lang-de">Tritt jede Woche an, komm ins Monatsranking und nimm an der großen Finalverlosung teil.</span><span class="lang-text lang-fr">Participez chaque semaine, entrez dans le classement mensuel et prenez part au grand tirage final.</span><span class="lang-text lang-pt">Compete todas as semanas, entra no ranking mensal e participa no grande sorteio final.</span><span class="lang-text lang-ro">Concurează în fiecare săptămână, intră în clasamentul lunar și participă la marea extragere finală.</span><span class="lang-text lang-tr">Her hafta yarış, aylık sıralamaya gir ve büyük final çekilişine katıl.</span></p><div class="hero-actions">
 <a class="btn" href="https://clients.a2bmarkets.com/r/0xzg1agoo7it" target="_blank" data-k="join"><span class="lang-text lang-es">Únete ahora</span><span class="lang-text lang-en">Join now</span><span class="lang-text lang-de">Jetzt teilnehmen</span><span class="lang-text lang-fr">Participer</span><span class="lang-text lang-pt">Participar agora</span><span class="lang-text lang-ro">Înscrie-te</span><span class="lang-text lang-tr">Şimdi katıl</span></a>
 <a class="btn alt" href="#winners" data-k="how"><span class="lang-text lang-es">Cómo se eligen los ganadores</span><span class="lang-text lang-en">How winners are chosen</span><span class="lang-text lang-de">Wie die Gewinner gewählt werden</span><span class="lang-text lang-fr">Comment les gagnants sont choisis</span><span class="lang-text lang-pt">Como são escolhidos os vencedores</span><span class="lang-text lang-ro">Cum sunt aleși câștigătorii</span><span class="lang-text lang-tr">Kazananlar nasıl seçiliyor</span></a>
 </div><div class="meta"><b id="n">1.442</b> <span data-k="joined"><span class="lang-text lang-es">traders ya se han unido</span><span class="lang-text lang-en">traders have already joined</span><span class="lang-text lang-de">Trader sind bereits dabei</span><span class="lang-text lang-fr">traders ont déjà rejoint</span><span class="lang-text lang-pt">traders já participaram</span><span class="lang-text lang-ro">traderi s-au înscris</span><span class="lang-text lang-tr">trader katıldı</span></span> · ✓ A2B Markets · PTJG &nbsp; ✓ $200 &nbsp; ✓ MT4 / MT5</div></section>
@@ -1276,13 +1595,13 @@ body:has(#css-lang-tr:checked) .count-box > span.lang-tr{
 <footer>PTJG Contest ⚡️ · 2026</footer>
 <script>
 const T={
-es:{live:"EN VIVO AHORA · NOVIEMBRE 2026",start:"Ya empezó.",win:"Aún puedes ganar.",hero:"Premios cada semana, ranking mensual y un gran sorteo final con iPhone 18, MacBook y $5.000.",join:"Únete ahora",how:"Cómo se eligen los ganadores",joined:"traders ya se han unido",monthly:"Gran sorteo final",winners:"3 ganadores · 1 premio para cada ganador",giveaway:"GRAN SORTEO · FINAL DEL CONCURSO",entryDesc:"Todo trader que cumpla los requisitos recibe una participación para el sorteo final.",entry:"Obtener mi participación",weekly:"Premios semanales · $1.000",weeklyDesc:"Cada semana: 🥇 $500 · 🥈 $300 · 🥉 $200",ways:"Tres formas de ganar.",best:"Mejor trader",bestDesc:"Ranking semanal por % de rentabilidad.",champ:"Campeón mensual",rankTitle:"El ranking es visible para todos.",top:"Top 10 traders",participants:"participantes",updating:"Resultados actualizados durante la competición",ret:"RENTABILIDAD",weeklyPrizes:"Premios semanales",monthlyPrize:"Premio mensual"},
-en:{live:"LIVE NOW · NOVEMBER 2026",start:"It's live.",win:"You can still win.",hero:"Cash every week for the best return %. Plus a monthly iPhone 18, MacBook and $5,000 giveaway.",join:"Join now",how:"How winners are picked",joined:"traders have already joined",monthly:"Monthly giveaway prizes",winners:"3 winners · 1 winner per prize",giveaway:"LIVE GIVEAWAY · END OF MONTH",entryDesc:"Every eligible trader receives one entry.",entry:"Get my entry",weekly:"$1,000 every week.",weeklyDesc:"For the best return %, with a new competition each week.",ways:"Two ways to win. One is pure luck.",best:"Best trader",bestDesc:"Ranking based on return %.",champ:"Monthly champion",rankTitle:"The ranking is visible to everyone.",top:"Top 10 traders",participants:"participants",updating:"Results are updated during the competition",ret:"RETURN",weeklyPrizes:"Weekly prizes",monthlyPrize:"Monthly prize"},
-de:{live:"JETZT LIVE · NOVEMBER 2026",start:"Es hat begonnen.",win:"Du kannst noch gewinnen.",hero:"Jede Woche Geld für die beste Rendite %. Dazu monatlich iPhone 18, MacBook und $5.000.",join:"Jetzt teilnehmen",how:"Wie Gewinner gewählt werden",joined:"Trader sind bereits dabei",monthly:"Monatliche Preise",winners:"3 Gewinner · 1 pro Preis",giveaway:"LIVE-VERLOSUNG · MONATSENDE",entryDesc:"Jeder berechtigte Trader erhält eine Teilnahme.",entry:"Teilnahme sichern",weekly:"$1.000 jede Woche.",weeklyDesc:"Für die beste Rendite %, jede Woche ein neuer Wettbewerb.",ways:"Zwei Wege zu gewinnen. Einer ist pures Glück.",best:"Bester Trader",bestDesc:"Rangliste nach Rendite %.",champ:"Monatssieger",rankTitle:"Die Rangliste ist für alle sichtbar.",top:"Top 10 Trader",participants:"Teilnehmer",updating:"Ergebnisse werden während des Wettbewerbs aktualisiert",ret:"RENDITE",weeklyPrizes:"Wöchentliche Preise",monthlyPrize:"Monatlicher Preis"},
-fr:{live:"EN DIRECT · NOVEMBRE 2026",start:"C'est parti.",win:"Vous pouvez encore gagner.",hero:"De l'argent chaque semaine pour le meilleur rendement %. Plus iPhone 18, MacBook et 5 000 $ chaque mois.",join:"Participer",how:"Comment sont choisis les gagnants",joined:"traders ont déjà rejoint",monthly:"Prix du tirage mensuel",winners:"3 gagnants · 1 par prix",giveaway:"TIRAGE EN DIRECT · FIN DU MOIS",entryDesc:"Chaque trader éligible reçoit une participation.",entry:"Obtenir ma participation",weekly:"1 000 $ chaque semaine.",weeklyDesc:"Pour le meilleur rendement %, avec une nouvelle compétition chaque semaine.",ways:"Deux façons de gagner. L'une est la chance pure.",best:"Meilleur trader",bestDesc:"Classement par rendement %.",champ:"Champion du mois",rankTitle:"Le classement est visible par tous.",top:"Top 10 traders",participants:"participants",updating:"Résultats mis à jour pendant la compétition",ret:"RENDEMENT",weeklyPrizes:"Prix hebdomadaires",monthlyPrize:"Prix mensuel"},
-pt:{live:"AO VIVO · NOVEMBRO 2026",start:"Já começou.",win:"Ainda podes ganhar.",hero:"Dinheiro todas as semanas para a melhor rentabilidade %. Mais iPhone 18, MacBook e $5.000 todos os meses.",join:"Participar agora",how:"Como são escolhidos os vencedores",joined:"traders já participaram",monthly:"Prémios do sorteio mensal",winners:"3 vencedores · 1 por prémio",giveaway:"SORTEIO AO VIVO · FIM DO MÊS",entryDesc:"Cada trader elegível recebe uma participação.",entry:"Obter participação",weekly:"$1.000 por semana.",weeklyDesc:"Para a melhor rentabilidade %, com nova competição semanal.",ways:"Duas formas de ganhar. Uma é pura sorte.",best:"Melhor trader",bestDesc:"Ranking por rentabilidade %.",champ:"Campeão mensal",rankTitle:"O ranking é visível para todos.",top:"Top 10 traders",participants:"participantes",updating:"Resultados atualizados durante a competição",ret:"RENTABILIDADE",weeklyPrizes:"Prémios semanais",monthlyPrize:"Prémio mensal"},
-ro:{live:"LIVE ACUM · NOIEMBRIE 2026",start:"A început.",win:"Încă poți câștiga.",hero:"Bani săptămânal pentru cel mai bun randament %. Plus iPhone 18, MacBook și 5.000 $ lunar.",join:"Înscrie-te",how:"Cum sunt aleși câștigătorii",joined:"traderi s-au înscris",monthly:"Premii lunare",winners:"3 câștigători · 1 per premiu",giveaway:"EXTRAGERE LIVE · SFÂRȘIT DE LUNĂ",entryDesc:"Fiecare trader eligibil primește o participare.",entry:"Obține participarea",weekly:"1.000 $ săptămânal.",weeklyDesc:"Pentru cel mai bun randament %, cu o nouă competiție săptămânal.",ways:"Două moduri de a câștiga. Unul este pur noroc.",best:"Cel mai bun trader",bestDesc:"Clasament după randament %.",champ:"Campion lunar",rankTitle:"Clasamentul este vizibil pentru toți.",top:"Top 10 traderi",participants:"participanți",updating:"Rezultatele sunt actualizate în timpul competiției",ret:"RANDAMENT",weeklyPrizes:"Premii săptămânale",monthlyPrize:"Premiu lunar"},
-tr:{live:"ŞİMDİ CANLI · KASIM 2026",start:"Başladı.",win:"Hâlâ kazanabilirsin.",hero:"En iyi getiri yüzdesine her hafta nakit. Ayrıca aylık iPhone 18, MacBook ve $5.000 çekilişi.",join:"Şimdi katıl",how:"Kazananlar nasıl seçiliyor",joined:"trader katıldı",monthly:"Aylık çekiliş ödülleri",winners:"3 kazanan · ödül başına 1 kişi",giveaway:"CANLI ÇEKİLİŞ · AY SONU",entryDesc:"Uygun her trader bir çekiliş hakkı kazanır.",entry:"Katılım hakkımı al",weekly:"Her hafta $1.000.",weeklyDesc:"En iyi getiri yüzdesi için her hafta yeni yarışma.",ways:"Kazanmanın iki yolu var. Biri tamamen şans.",best:"En iyi trader",bestDesc:"Getiri yüzdesine göre sıralama.",champ:"Aylık şampiyon",rankTitle:"Sıralama herkes tarafından görülebilir.",top:"En iyi 10 trader",participants:"katılımcı",updating:"Sonuçlar yarışma boyunca güncellenir",ret:"GETİRİ",weeklyPrizes:"Haftalık ödüller",monthlyPrize:"Aylık ödül"}
+es:{live:"EN VIVO AHORA · CONCURSO NOVIEMBRE 2026",start:"Ya empezó el mejor concurso de traders.",win:"",hero:"Compite cada semana, entra en el ranking mensual y participa en el gran sorteo final.",join:"Únete ahora",how:"Cómo se eligen los ganadores",joined:"traders ya se han unido",monthly:"Gran sorteo final",winners:"3 ganadores · 1 premio para cada ganador",giveaway:"GRAN SORTEO · FINAL DEL CONCURSO",entryDesc:"Todo trader que cumpla los requisitos recibe una participación para el sorteo final.",entry:"Obtener mi participación",weekly:"Premios semanales · $1.000",weeklyDesc:"Cada semana: 🥇 $500 · 🥈 $300 · 🥉 $200",ways:"Tres formas de ganar.",best:"Mejor trader",bestDesc:"Ranking semanal por % de rentabilidad.",champ:"Campeón mensual",rankTitle:"El ranking es visible para todos.",top:"Top 10 traders",participants:"participantes",updating:"Resultados actualizados durante la competición",ret:"RENTABILIDAD",weeklyPrizes:"Premios semanales",monthlyPrize:"Premio mensual"},
+en:{live:"LIVE NOW · NOVEMBER 2026 TRADING CONTEST",start:"The best traders contest is live.",win:"",hero:"Cash every week for the best return %. Plus a monthly iPhone 18, MacBook and $5,000 giveaway.",join:"Join now",how:"How winners are picked",joined:"traders have already joined",monthly:"Monthly giveaway prizes",winners:"3 winners · 1 winner per prize",giveaway:"LIVE GIVEAWAY · END OF MONTH",entryDesc:"Every eligible trader receives one entry.",entry:"Get my entry",weekly:"$1,000 every week.",weeklyDesc:"For the best return %, with a new competition each week.",ways:"Two ways to win. One is pure luck.",best:"Best trader",bestDesc:"Ranking based on return %.",champ:"Monthly champion",rankTitle:"The ranking is visible to everyone.",top:"Top 10 traders",participants:"participants",updating:"Results are updated during the competition",ret:"RETURN",weeklyPrizes:"Weekly prizes",monthlyPrize:"Monthly prize"},
+de:{live:"JETZT LIVE · TRADING-WETTBEWERB NOVEMBER 2026",start:"Der beste Trading-Wettbewerb hat begonnen.",win:"",hero:"Jede Woche Geld für die beste Rendite %. Dazu monatlich iPhone 18, MacBook und $5.000.",join:"Jetzt teilnehmen",how:"Wie Gewinner gewählt werden",joined:"Trader sind bereits dabei",monthly:"Monatliche Preise",winners:"3 Gewinner · 1 pro Preis",giveaway:"LIVE-VERLOSUNG · MONATSENDE",entryDesc:"Jeder berechtigte Trader erhält eine Teilnahme.",entry:"Teilnahme sichern",weekly:"$1.000 jede Woche.",weeklyDesc:"Für die beste Rendite %, jede Woche ein neuer Wettbewerb.",ways:"Zwei Wege zu gewinnen. Einer ist pures Glück.",best:"Bester Trader",bestDesc:"Rangliste nach Rendite %.",champ:"Monatssieger",rankTitle:"Die Rangliste ist für alle sichtbar.",top:"Top 10 Trader",participants:"Teilnehmer",updating:"Ergebnisse werden während des Wettbewerbs aktualisiert",ret:"RENDITE",weeklyPrizes:"Wöchentliche Preise",monthlyPrize:"Monatlicher Preis"},
+fr:{live:"EN DIRECT · CONCOURS TRADING NOVEMBRE 2026",start:"Le meilleur concours de traders a commencé.",win:"",hero:"De l'argent chaque semaine pour le meilleur rendement %. Plus iPhone 18, MacBook et 5 000 $ chaque mois.",join:"Participer",how:"Comment sont choisis les gagnants",joined:"traders ont déjà rejoint",monthly:"Prix du tirage mensuel",winners:"3 gagnants · 1 par prix",giveaway:"TIRAGE EN DIRECT · FIN DU MOIS",entryDesc:"Chaque trader éligible reçoit une participation.",entry:"Obtenir ma participation",weekly:"1 000 $ chaque semaine.",weeklyDesc:"Pour le meilleur rendement %, avec une nouvelle compétition chaque semaine.",ways:"Deux façons de gagner. L'une est la chance pure.",best:"Meilleur trader",bestDesc:"Classement par rendement %.",champ:"Champion du mois",rankTitle:"Le classement est visible par tous.",top:"Top 10 traders",participants:"participants",updating:"Résultats mis à jour pendant la compétition",ret:"RENDEMENT",weeklyPrizes:"Prix hebdomadaires",monthlyPrize:"Prix mensuel"},
+pt:{live:"AO VIVO · CONCURSO DE TRADING NOVEMBRO 2026",start:"O melhor concurso de traders já começou.",win:"",hero:"Dinheiro todas as semanas para a melhor rentabilidade %. Mais iPhone 18, MacBook e $5.000 todos os meses.",join:"Participar agora",how:"Como são escolhidos os vencedores",joined:"traders já participaram",monthly:"Prémios do sorteio mensal",winners:"3 vencedores · 1 por prémio",giveaway:"SORTEIO AO VIVO · FIM DO MÊS",entryDesc:"Cada trader elegível recebe uma participação.",entry:"Obter participação",weekly:"$1.000 por semana.",weeklyDesc:"Para a melhor rentabilidade %, com nova competição semanal.",ways:"Duas formas de ganhar. Uma é pura sorte.",best:"Melhor trader",bestDesc:"Ranking por rentabilidade %.",champ:"Campeão mensal",rankTitle:"O ranking é visível para todos.",top:"Top 10 traders",participants:"participantes",updating:"Resultados atualizados durante a competição",ret:"RENTABILIDADE",weeklyPrizes:"Prémios semanais",monthlyPrize:"Prémio mensal"},
+ro:{live:"LIVE ACUM · CONCURS TRADING NOIEMBRIE 2026",start:"Cel mai bun concurs de traderi a început.",win:"",hero:"Bani săptămânal pentru cel mai bun randament %. Plus iPhone 18, MacBook și 5.000 $ lunar.",join:"Înscrie-te",how:"Cum sunt aleși câștigătorii",joined:"traderi s-au înscris",monthly:"Premii lunare",winners:"3 câștigători · 1 per premiu",giveaway:"EXTRAGERE LIVE · SFÂRȘIT DE LUNĂ",entryDesc:"Fiecare trader eligibil primește o participare.",entry:"Obține participarea",weekly:"1.000 $ săptămânal.",weeklyDesc:"Pentru cel mai bun randament %, cu o nouă competiție săptămânal.",ways:"Două moduri de a câștiga. Unul este pur noroc.",best:"Cel mai bun trader",bestDesc:"Clasament după randament %.",champ:"Campion lunar",rankTitle:"Clasamentul este vizibil pentru toți.",top:"Top 10 traderi",participants:"participanți",updating:"Rezultatele sunt actualizate în timpul competiției",ret:"RANDAMENT",weeklyPrizes:"Premii săptămânale",monthlyPrize:"Premiu lunar"},
+tr:{live:"ŞİMDİ CANLI · KASIM 2026 TRADING YARIŞMASI",start:"En iyi trader yarışması başladı.",win:"",hero:"En iyi getiri yüzdesine her hafta nakit. Ayrıca aylık iPhone 18, MacBook ve $5.000 çekilişi.",join:"Şimdi katıl",how:"Kazananlar nasıl seçiliyor",joined:"trader katıldı",monthly:"Aylık çekiliş ödülleri",winners:"3 kazanan · ödül başına 1 kişi",giveaway:"CANLI ÇEKİLİŞ · AY SONU",entryDesc:"Uygun her trader bir çekiliş hakkı kazanır.",entry:"Katılım hakkımı al",weekly:"Her hafta $1.000.",weeklyDesc:"En iyi getiri yüzdesi için her hafta yeni yarışma.",ways:"Kazanmanın iki yolu var. Biri tamamen şans.",best:"En iyi trader",bestDesc:"Getiri yüzdesine göre sıralama.",champ:"Aylık şampiyon",rankTitle:"Sıralama herkes tarafından görülebilir.",top:"En iyi 10 trader",participants:"katılımcı",updating:"Sonuçlar yarışma boyunca güncellenir",ret:"GETİRİ",weeklyPrizes:"Haftalık ödüller",monthlyPrize:"Aylık ödül"}
 };
 function apply(l){let d=T[l]||T.es;document.documentElement.lang=l;document.querySelectorAll("[data-k]").forEach(e=>e.textContent=d[e.dataset.k]);let num=l==="en"?"1,442":"1.442";document.getElementById("n").textContent=num;document.getElementById("pn").textContent=num}
 let s=document.getElementById("lang");s.onchange=()=>apply(s.value);apply("es");
