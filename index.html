@@ -1462,6 +1462,75 @@ body:has(#css-lang-tr:checked) .count-box > span.lang-tr{
 }
 </style>
 
+
+<style id="ptjg-ranking-medal-colors-final">
+/* Ranking medal colors */
+.leader-row:nth-of-type(1) .rank,
+.leaderboard .leader-row:nth-child(1) .rank,
+.rank-row:nth-child(1) .rank,
+.trader-row:nth-child(1) .rank{
+  background:linear-gradient(145deg,#ffe36a,#d4a51f)!important;
+  border-color:#f4d34e!important;
+  color:#111!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.38),0 0 14px rgba(244,211,78,.10)!important;
+}
+.leader-row:nth-of-type(2) .rank,
+.leaderboard .leader-row:nth-child(2) .rank,
+.rank-row:nth-child(2) .rank,
+.trader-row:nth-child(2) .rank{
+  background:linear-gradient(145deg,#f3f3f3,#aeb3b8)!important;
+  border-color:#d9dde1!important;
+  color:#111!important;
+}
+.leader-row:nth-of-type(3) .rank,
+.leaderboard .leader-row:nth-child(3) .rank,
+.rank-row:nth-child(3) .rank,
+.trader-row:nth-child(3) .rank{
+  background:linear-gradient(145deg,#c98243,#8a4f22)!important;
+  border-color:#b86a32!important;
+  color:#111!important;
+}
+</style>
+
+
+<style id="ptjg-final-gold-and-spacing-fix">
+/* Force exact podium colors in the ranking */
+.row.r1 .rank{
+  border-color:#f3cf35!important;
+  background:linear-gradient(145deg,#ffe98a,#e0b52a 55%,#b98700)!important;
+  color:#1b1500!important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.42),
+    0 0 12px rgba(243,207,53,.12)!important;
+}
+.row.r2 .rank{
+  border-color:#e5e5e5!important;
+  background:linear-gradient(145deg,#ffffff,#b9bec3)!important;
+  color:#151515!important;
+}
+.row.r3 .rank{
+  border-color:#c97835!important;
+  background:linear-gradient(145deg,#d89151,#8f4f22)!important;
+  color:#1c0d03!important;
+}
+
+/* Bring the title closer to the live bar */
+.ptjg-livebar{
+  margin-bottom:10px!important;
+}
+.ptjg-hero-title-row h1{
+  margin-top:14px!important;
+}
+@media(max-width:700px){
+  .ptjg-livebar{
+    margin-bottom:6px!important;
+  }
+  .ptjg-hero-title-row h1{
+    margin-top:10px!important;
+  }
+}
+</style>
+
 </head><body>
 
 <div class="ptjg-aa-energy" aria-hidden="true">
