@@ -2,14 +2,14 @@
 <title>PTJG Contest ⚡️</title>
 <style>
 *{box-sizing:border-box} body{margin:0;background:#08050e;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif} :root{--p:#8b3dff;--mut:#c9bdd7;--green:#36d39b}
-header{background:#090610;border-bottom:1px solid #2c1b40}.nav{max-width:1000px;margin:auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:27px;font-weight:900;display:flex;gap:12px;align-items:center}.logo{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#a64cff,#6021d4);box-shadow:0 0 28px #7c3aed77;font-size:17px}select{background:#fff;border:0;border-radius:18px;padding:13px 15px;font-size:17px;font-weight:800}
+header{background:#090610;border-bottom:1px solid #2c1b40}.nav{max-width:1000px;margin:auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:27px;font-weight:900;display:flex;gap:12px;align-items:center}.logo{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#a64cff,#6021d4);box-shadow:0 0 28px #7c3aed77;font-size:17px}.brand .logo.logo-magnet{background:transparent!important;border:none!important;box-shadow:none!important;border-radius:0!important;width:54px;height:54px;overflow:visible}.brand .logo.logo-magnet img{width:54px;height:54px;display:block;object-fit:contain}select{background:#fff;border:0;border-radius:18px;padding:13px 15px;font-size:17px;font-weight:800}
 section{max-width:1000px;margin:auto;padding:65px 24px}.hero{max-width:none;background:radial-gradient(circle at 70% 10%,#482070,transparent 32%);padding-left:max(24px,calc((100% - 952px)/2));padding-right:max(24px,calc((100% - 952px)/2))}.live{display:inline-flex;align-items:center;gap:10px;border:1px solid #773451;border-radius:999px;padding:12px 18px;color:#ffb4c4;font-weight:900}.dot{width:13px;height:13px;background:#ff375f;border-radius:50%;animation:p 1s infinite}@keyframes p{50%{opacity:.25;transform:scale(.7)}}
 h1{font-size:clamp(48px,8vw,82px);line-height:1;margin:42px 0 24px}.accent{border-bottom:11px solid #7242bd}.lead{color:var(--mut);font-size:21px;line-height:1.55;max-width:760px}.btn{display:inline-block;text-decoration:none;color:#fff;font-weight:900;border-radius:999px;padding:17px 28px;margin:18px 9px 18px 0;background:linear-gradient(135deg,#a64cff,#6923e7);box-shadow:0 12px 28px #7c3aed44}.btn.alt{background:#15101e;border:1px solid #563776;box-shadow:none}.meta{font-size:18px;color:#d1c5dc;margin-top:20px}
 .panel{background:linear-gradient(145deg,#171020,#0d0913);border:1px solid #4d2f6d;border-radius:28px;padding:28px}.center{text-align:center}h2{font-size:clamp(36px,6vw,58px);margin:0 0 14px}.prizes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:35px 0}.prize{background:radial-gradient(circle at 50% 35%,#4c2573,transparent 45%),#0d0914;border:1px solid #5a377c;border-radius:25px;padding:16px;min-height:350px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}.prize img{width:100%;height:260px;object-fit:contain;filter:drop-shadow(0 22px 20px #0009)}.prize b{font-size:22px;margin:10px 0}.cash{font-size:37px;font-weight:1000}.red{background:#f03535;border-radius:18px;padding:15px;font-weight:1000;letter-spacing:2px;margin:18px auto;max-width:650px}
 .big{font-size:clamp(42px,7vw,68px);font-weight:1000;line-height:1.06}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:#130d1c;border:1px solid #422a5b;border-radius:24px;padding:26px}.rule{padding:13px 0;border-bottom:1px solid #352345}
 .leader{border:1px solid #5d3783;border-radius:26px;overflow:hidden;background:#100a18}.lh{background:linear-gradient(100deg,#8c3df0,#6020bd);padding:22px 25px;font-size:19px;font-weight:900}.lh1{display:flex;justify-content:space-between;gap:12px}.cols,.row{display:grid;grid-template-columns:70px 1fr 145px;align-items:center}.cols{padding:16px 22px;color:#cfc3dc;font-weight:900}.row{padding:17px 22px;border-top:1px solid #3b2b49;min-height:87px}.rank{width:52px;height:52px;border:4px solid #8b42ff;border-radius:50%;display:grid;place-items:center;font-weight:1000;font-size:20px}.r1 .rank{border-color:#ffd700;background:linear-gradient(145deg,#fff0a5,#b78500);color:#271900}.r2 .rank{border-color:#eee;background:linear-gradient(145deg,#fff,#9ca3af);color:#222}.r3 .rank{border-color:#cd7f32;background:linear-gradient(145deg,#efb274,#884716);color:#241005}.name{font-size:20px;font-weight:900}.medal{font-size:27px;margin-left:8px}.ret{text-align:right;color:var(--green);font-size:21px;font-weight:1000}
 footer{text-align:center;padding:50px;color:#998ba8}
-@media(max-width:700px){section{padding:50px 20px}.nav{padding:18px 20px}.brand{font-size:21px}.logo{width:45px;height:45px}select{max-width:165px}.prizes{grid-template-columns:1fr}.prize{min-height:285px;padding:12px}.prize img{height:215px}.cards{grid-template-columns:1fr}.cols,.row{grid-template-columns:58px 1fr 102px;padding-left:14px;padding-right:14px}.ret{font-size:17px}}
+@media(max-width:700px){section{padding:50px 20px}.nav{padding:18px 20px}.brand{font-size:21px}.logo{width:45px;height:45px}.brand .logo.logo-magnet{width:47px;height:47px}.brand .logo.logo-magnet img{width:47px;height:47px}select{max-width:165px}.prizes{grid-template-columns:1fr}.prize{min-height:285px;padding:12px}.prize img{height:215px}.cards{grid-template-columns:1fr}.cols,.row{grid-template-columns:58px 1fr 102px;padding-left:14px;padding-right:14px}.ret{font-size:17px}}
 </style>
 <style id="single-prize-image-style">
 .prize-hero-image-wrap{
@@ -1531,6 +1531,769 @@ body:has(#css-lang-tr:checked) .count-box > span.lang-tr{
 }
 </style>
 
+
+<style id="ptjg-compact-spacing-final">
+/* Compactar la web sin tocar la estructura */
+section{
+  padding-top:38px!important;
+  padding-bottom:38px!important;
+}
+section + section{
+  margin-top:0!important;
+}
+
+/* Hero */
+.hero{
+  padding-top:34px!important;
+  padding-bottom:42px!important;
+}
+.hero .ptjg-livebar{
+  margin-bottom:4px!important;
+}
+.ptjg-hero-title-row{
+  margin-top:0!important;
+}
+.ptjg-hero-title-row h1{
+  margin-top:8px!important;
+  margin-bottom:14px!important;
+}
+.hero .lead,
+.hero p{
+  margin-top:10px!important;
+  margin-bottom:18px!important;
+}
+.hero .cta-row,
+.hero .buttons,
+.hero .actions{
+  margin-top:16px!important;
+  margin-bottom:16px!important;
+}
+
+/* Titulares */
+h2{
+  margin-top:0!important;
+  margin-bottom:18px!important;
+}
+h3{
+  margin-top:0!important;
+  margin-bottom:12px!important;
+}
+
+/* Tarjetas y bloques */
+.panel,
+.card,
+.pro-panel,
+.money-card,
+.rules-card,
+.step-card,
+.faq-item,
+.leaderboard-card,
+.referral-card,
+.organizer-card{
+  margin-top:12px!important;
+  margin-bottom:12px!important;
+}
+
+/* Bloques concretos */
+#season{
+  padding-top:30px!important;
+  padding-bottom:34px!important;
+}
+#eligibility,
+#steps,
+#rules,
+#prizes,
+#leaderboard,
+#winners,
+#referral,
+#organizer,
+#faq{
+  padding-top:34px!important;
+  padding-bottom:34px!important;
+}
+
+/* Ranking y ganadores */
+#leaderboard h2,
+#winners h2{
+  margin-bottom:14px!important;
+}
+#winners .tabs,
+#winners .winner-tabs{
+  margin-top:10px!important;
+  margin-bottom:14px!important;
+}
+
+/* FAQ */
+#faq .faq-list{
+  gap:10px!important;
+}
+
+/* Móvil */
+@media(max-width:700px){
+  section{
+    padding-top:26px!important;
+    padding-bottom:26px!important;
+  }
+  .hero{
+    padding-top:26px!important;
+    padding-bottom:30px!important;
+  }
+  #season,
+  #eligibility,
+  #steps,
+  #rules,
+  #prizes,
+  #leaderboard,
+  #winners,
+  #referral,
+  #organizer,
+  #faq{
+    padding-top:26px!important;
+    padding-bottom:26px!important;
+  }
+  h2{
+    margin-bottom:14px!important;
+  }
+  .panel,
+  .card,
+  .pro-panel,
+  .money-card,
+  .rules-card,
+  .step-card,
+  .faq-item,
+  .leaderboard-card,
+  .referral-card,
+  .organizer-card{
+    margin-top:8px!important;
+    margin-bottom:8px!important;
+  }
+}
+</style>
+
+
+<style id="ptjg-tight-spacing-v2">
+/* Much tighter vertical rhythm */
+section,
+.pro-section{
+  padding-top:24px!important;
+  padding-bottom:24px!important;
+}
+section + section,
+.pro-section + .pro-section{
+  margin-top:0!important;
+}
+
+/* Remove large inherited gaps */
+.big,
+.pro-title,
+section h2,
+section h3{
+  margin-top:0!important;
+}
+.big{margin-bottom:14px!important}
+.pro-title,
+section h2{margin-bottom:12px!important}
+section h3{margin-bottom:8px!important}
+
+.lead,
+.pro-copy,
+section p{
+  margin-top:6px!important;
+  margin-bottom:12px!important;
+}
+
+/* Cards/panels */
+.panel,
+.pro-panel,
+.step-pro,
+.rule,
+.prize-card,
+.money-card,
+.leader,
+.css-tab-panel,
+.referral-card,
+.organizer-card,
+.faq details{
+  margin-top:10px!important;
+  margin-bottom:10px!important;
+}
+
+/* Specific sections that had too much empty space */
+#season,
+#eligibility,
+#rules,
+#winners,
+#winners-history,
+#referral,
+#organizer,
+#faq{
+  padding-top:20px!important;
+  padding-bottom:20px!important;
+}
+
+/* Hero compact */
+.hero{
+  padding-top:24px!important;
+  padding-bottom:24px!important;
+}
+.hero .ptjg-livebar{
+  margin-bottom:2px!important;
+}
+.ptjg-hero-title-row h1{
+  margin-top:6px!important;
+  margin-bottom:10px!important;
+}
+.hero-actions{
+  margin-top:12px!important;
+  margin-bottom:12px!important;
+}
+
+/* Final giveaway section */
+section > .panel.center{
+  margin-top:4px!important;
+  margin-bottom:4px!important;
+}
+
+/* Ranking */
+.rank-wide{
+  margin-top:12px!important;
+}
+#winners-history .css-tab-wrap,
+#winners-history .css-tabs{
+  margin-top:8px!important;
+  margin-bottom:10px!important;
+}
+#winners-history .css-tab-panels{
+  margin-top:8px!important;
+}
+
+/* 3 steps */
+.step-pro{
+  padding-top:22px!important;
+  padding-bottom:22px!important;
+}
+
+/* FAQ */
+.faq{
+  gap:8px!important;
+}
+.faq details{
+  padding-top:14px!important;
+  padding-bottom:14px!important;
+}
+
+/* Referral / organizer */
+#referral .panel,
+#organizer .panel{
+  margin-top:6px!important;
+}
+
+/* Mobile: aggressively reduce empty vertical space */
+@media(max-width:700px){
+  section,
+  .pro-section{
+    padding-top:14px!important;
+    padding-bottom:14px!important;
+  }
+  #season,
+  #eligibility,
+  #rules,
+  #winners,
+  #winners-history,
+  #referral,
+  #organizer,
+  #faq{
+    padding-top:12px!important;
+    padding-bottom:12px!important;
+  }
+  .hero{
+    padding-top:18px!important;
+    padding-bottom:18px!important;
+  }
+  .big{
+    margin-bottom:10px!important;
+  }
+  .pro-title,
+  section h2{
+    margin-bottom:8px!important;
+  }
+  .lead,
+  .pro-copy,
+  section p{
+    margin-top:4px!important;
+    margin-bottom:8px!important;
+  }
+  .panel,
+  .pro-panel,
+  .step-pro,
+  .rule,
+  .prize-card,
+  .money-card,
+  .leader,
+  .css-tab-panel,
+  .referral-card,
+  .organizer-card,
+  .faq details{
+    margin-top:6px!important;
+    margin-bottom:6px!important;
+  }
+  .rank-wide{
+    margin-top:8px!important;
+  }
+  .step-pro{
+    padding-top:18px!important;
+    padding-bottom:18px!important;
+  }
+}
+</style>
+
+
+<style id="ptjg-demo-auto-style">
+.ptjg-demo-mode{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  margin-left:10px;
+  padding:5px 9px;
+  border:1px solid rgba(239,213,79,.35);
+  border-radius:999px;
+  color:#efd54f;
+  font-size:10px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  vertical-align:middle;
+}
+.ptjg-demo-dot{
+  width:6px;height:6px;border-radius:50%;background:#efd54f;
+  box-shadow:0 0 10px rgba(239,213,79,.4);
+}
+.ptjg-month-history{
+  margin-top:14px;
+  display:grid;
+  gap:10px;
+}
+.ptjg-history-card{
+  border:1px solid #202020;
+  border-radius:18px;
+  padding:14px 16px;
+  background:#0d0d0d;
+}
+.ptjg-history-title{
+  color:#efd54f;
+  font-weight:900;
+  font-size:13px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.ptjg-history-row{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  padding:7px 0;
+  border-top:1px solid #1e1e1e;
+  font-size:14px;
+}
+.ptjg-history-row:first-of-type{border-top:0}
+@media(max-width:700px){
+  .ptjg-demo-mode{font-size:9px;padding:5px 8px}
+}
+</style>
+
+
+<style id="ptjg-balanced-spacing">
+/* Balanced spacing: more breathing room than the compact version */
+section,
+.pro-section{
+  padding-top:34px!important;
+  padding-bottom:34px!important;
+}
+
+.hero{
+  padding-top:28px!important;
+  padding-bottom:38px!important;
+}
+
+#season,
+#eligibility,
+#steps,
+#rules,
+#prizes,
+#leaderboard,
+#winners,
+#winners-history,
+#referral,
+#organizer,
+#faq{
+  padding-top:32px!important;
+  padding-bottom:32px!important;
+}
+
+.big,
+.pro-title,
+section h2{
+  margin-bottom:16px!important;
+}
+
+section h3{
+  margin-bottom:10px!important;
+}
+
+.lead,
+.pro-copy,
+section p{
+  margin-top:8px!important;
+  margin-bottom:14px!important;
+}
+
+.panel,
+.pro-panel,
+.step-pro,
+.rule,
+.prize-card,
+.money-card,
+.leader,
+.css-tab-panel,
+.referral-card,
+.organizer-card,
+.faq details{
+  margin-top:12px!important;
+  margin-bottom:12px!important;
+}
+
+.rank-wide{
+  margin-top:14px!important;
+}
+
+#winners-history .css-tab-wrap,
+#winners-history .css-tabs{
+  margin-top:10px!important;
+  margin-bottom:14px!important;
+}
+
+#faq .faq,
+.faq{
+  gap:10px!important;
+}
+
+.hero .ptjg-livebar{
+  margin-bottom:8px!important;
+}
+
+.ptjg-hero-title-row h1{
+  margin-top:10px!important;
+  margin-bottom:14px!important;
+}
+
+@media(max-width:700px){
+  section,
+  .pro-section{
+    padding-top:24px!important;
+    padding-bottom:24px!important;
+  }
+
+  .hero{
+    padding-top:22px!important;
+    padding-bottom:30px!important;
+  }
+
+  #season,
+  #eligibility,
+  #steps,
+  #rules,
+  #prizes,
+  #leaderboard,
+  #winners,
+  #winners-history,
+  #referral,
+  #organizer,
+  #faq{
+    padding-top:22px!important;
+    padding-bottom:22px!important;
+  }
+
+  .panel,
+  .pro-panel,
+  .step-pro,
+  .rule,
+  .prize-card,
+  .money-card,
+  .leader,
+  .css-tab-panel,
+  .referral-card,
+  .organizer-card,
+  .faq details{
+    margin-top:8px!important;
+    margin-bottom:8px!important;
+  }
+}
+</style>
+
+
+<style id="ptjg-theme-toggle-style">
+.nav-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.theme-toggle{position:relative;z-index:10002;
+  width:48px;
+  height:48px;
+  border-radius:16px;
+  border:1px solid #2a2a2a;
+  background:#0b0b0b;
+  color:#f2d64e;
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  font-size:23px;
+  line-height:1;
+  padding:0;
+  transition:.22s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.theme-toggle:active{transform:scale(.96)}
+.theme-moon{display:none}
+
+/* LIGHT MODE */
+body:has(#themeSwitch:checked){
+  background:#f7f7f4!important;
+  color:#111!important;
+}
+
+body:has(#themeSwitch:checked) header,
+body:has(#themeSwitch:checked) footer{
+  background:#ffffff!important;
+  color:#111!important;
+  border-color:#e4e4df!important;
+}
+
+body:has(#themeSwitch:checked) section,
+body:has(#themeSwitch:checked) .hero,
+body:has(#themeSwitch:checked) .pro-section{
+  background-color:transparent!important;
+}
+
+body:has(#themeSwitch:checked) .panel,
+body:has(#themeSwitch:checked) .pro-panel,
+body:has(#themeSwitch:checked) .step-pro,
+body:has(#themeSwitch:checked) .rule,
+body:has(#themeSwitch:checked) .prize-card,
+body:has(#themeSwitch:checked) .money-card,
+body:has(#themeSwitch:checked) .leader,
+body:has(#themeSwitch:checked) .css-tab-panel,
+body:has(#themeSwitch:checked) .referral-card,
+body:has(#themeSwitch:checked) .organizer-card,
+body:has(#themeSwitch:checked) .faq details,
+body:has(#themeSwitch:checked) .rank-wide,
+body:has(#themeSwitch:checked) .ptjg-history-card{
+  background:#ffffff!important;
+  color:#111!important;
+  border-color:#deded8!important;
+  box-shadow:none!important;
+}
+
+body:has(#themeSwitch:checked) h1,
+body:has(#themeSwitch:checked) h2,
+body:has(#themeSwitch:checked) h3,
+body:has(#themeSwitch:checked) .big,
+body:has(#themeSwitch:checked) .pro-title,
+body:has(#themeSwitch:checked) .brand,
+body:has(#themeSwitch:checked) .faq summary{
+  color:#111!important;
+}
+
+body:has(#themeSwitch:checked) .lead,
+body:has(#themeSwitch:checked) .pro-copy,
+body:has(#themeSwitch:checked) section p,
+body:has(#themeSwitch:checked) .legal,
+body:has(#themeSwitch:checked) .money-card span{
+  color:#5d5d57!important;
+}
+
+body:has(#themeSwitch:checked) .btn.secondary,
+body:has(#themeSwitch:checked) .btn-outline,
+body:has(#themeSwitch:checked) .ghost-btn,
+body:has(#themeSwitch:checked) .css-tab-label,
+body:has(#themeSwitch:checked) .lang-menu summary{
+  background:#fff!important;
+  color:#111!important;
+  border-color:#d7d7d2!important;
+}
+
+body:has(#themeSwitch:checked) .lang-options{
+  background:#ffffff!important;
+  border-color:#d7d7d2!important;
+  box-shadow:0 16px 40px rgba(0,0,0,.10)!important;
+}
+
+body:has(#themeSwitch:checked) .lang-options label{
+  color:#111!important;
+}
+
+body:has(#themeSwitch:checked) .theme-toggle{
+  background:#ffffff!important;
+  color:#111!important;
+  border-color:#d7d7d2!important;
+}
+
+body:has(#themeSwitch:checked) .theme-sun{display:none}
+body:has(#themeSwitch:checked) .theme-moon{display:inline}
+
+body:has(#themeSwitch:checked) .ptjg-livebar{
+  background:#fff4f5!important;
+}
+
+body:has(#themeSwitch:checked) .count-box,
+body:has(#themeSwitch:checked) #season .count-box{
+  background:#f1f1ed!important;
+  border-color:#e1e1dc!important;
+}
+
+body:has(#themeSwitch:checked) .count-box b,
+body:has(#themeSwitch:checked) #season .count-box b{
+  color:#111!important;
+}
+
+body:has(#themeSwitch:checked) .row,
+body:has(#themeSwitch:checked) .winner-item,
+body:has(#themeSwitch:checked) .ptjg-history-row{
+  border-color:#e6e6e1!important;
+}
+
+body:has(#themeSwitch:checked) .row .name,
+body:has(#themeSwitch:checked) .winner-item span,
+body:has(#themeSwitch:checked) .ptjg-history-row span{
+  color:#111!important;
+}
+
+body:has(#themeSwitch:checked) .ret,
+body:has(#themeSwitch:checked) .status{
+  color:#38a56d!important;
+}
+
+body:has(#themeSwitch:checked) .ptjg-podium-emblem{
+  filter:none!important;
+}
+
+body:has(#themeSwitch:checked) .support-float,
+body:has(#themeSwitch:checked) .chat-float,
+body:has(#themeSwitch:checked) [class*="support"][class*="float"]{
+  box-shadow:0 8px 24px rgba(0,0,0,.12)!important;
+}
+
+/* Keep gold accent */
+body:has(#themeSwitch:checked) .accent,
+body:has(#themeSwitch:checked) .chip,
+body:has(#themeSwitch:checked) .season-chip,
+body:has(#themeSwitch:checked) .theme-toggle,
+body:has(#themeSwitch:checked) .rank.r1,
+body:has(#themeSwitch:checked) .gold{
+  color:#c9a62f;
+}
+
+@media(max-width:700px){
+  .nav-actions{gap:8px}
+  .theme-toggle{
+    width:44px;
+    height:44px;
+    border-radius:14px;
+    font-size:21px;
+  }
+}
+</style>
+
+
+<style id="ptjg-css-only-theme-fix">
+.theme-switch-input{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+.theme-toggle{
+  position:relative!important;
+  z-index:10005!important;
+  user-select:none!important;
+  -webkit-user-select:none!important;
+  touch-action:manipulation!important;
+}
+body:has(#themeSwitch:checked) .theme-sun{display:none!important}
+body:has(#themeSwitch:checked) .theme-moon{display:inline!important}
+body:not(:has(#themeSwitch:checked)) .theme-sun{display:inline!important}
+body:not(:has(#themeSwitch:checked)) .theme-moon{display:none!important}
+</style>
+
+
+<style id="ptjg-lightmode-card-fix">
+/* Fix remaining dark cards/text in light mode */
+body:has(#themeSwitch:checked) .rule-pro,
+body:has(#themeSwitch:checked) .elig-css-row,
+body:has(#themeSwitch:checked) .elig-final,
+body:has(#themeSwitch:checked) .prize-structure-card,
+body:has(#themeSwitch:checked) .prize-structure-card.grand{
+  background:#ffffff !important;
+  color:#111111 !important;
+  border:1px solid #deded8 !important;
+  box-shadow:none !important;
+}
+
+body:has(#themeSwitch:checked) .elig-css-question,
+body:has(#themeSwitch:checked) .rule-pro span,
+body:has(#themeSwitch:checked) .prize-structure-card p,
+body:has(#themeSwitch:checked) .prize-line span,
+body:has(#themeSwitch:checked) .prize-total,
+body:has(#themeSwitch:checked) .grand-prizes{
+  color:#111111 !important;
+}
+
+body:has(#themeSwitch:checked) .prize-structure-card h3{
+  color:#111111 !important;
+}
+
+body:has(#themeSwitch:checked) .prize-line{
+  border-color:#e6e6e1 !important;
+}
+
+body:has(#themeSwitch:checked) .prize-line strong{
+  color:#111111 !important;
+}
+
+body:has(#themeSwitch:checked) .elig-css-buttons label{
+  background:#ffffff !important;
+  color:#111111 !important;
+  border:1px solid #d7d7d2 !important;
+}
+
+body:has(#themeSwitch:checked) #eq1y:checked ~ .elig-css-buttons label[for="eq1y"],
+body:has(#themeSwitch:checked) #eq1n:checked ~ .elig-css-buttons label[for="eq1n"],
+body:has(#themeSwitch:checked) #eq2y:checked ~ .elig-css-buttons label[for="eq2y"],
+body:has(#themeSwitch:checked) #eq2n:checked ~ .elig-css-buttons label[for="eq2n"],
+body:has(#themeSwitch:checked) #eq3y:checked ~ .elig-css-buttons label[for="eq3y"],
+body:has(#themeSwitch:checked) #eq3n:checked ~ .elig-css-buttons label[for="eq3n"]{
+  background:#f0d84d !important;
+  color:#111111 !important;
+  border-color:#e1c73a !important;
+}
+
+body:has(#themeSwitch:checked) .elig-feedback{
+  background:#f7f7f4 !important;
+  border:1px solid #deded8 !important;
+}
+
+body:has(#themeSwitch:checked) .elig-final{
+  color:#111111 !important;
+}
+
+body:has(#themeSwitch:checked) .elig-final-success{
+  color:#1f8b5b !important;
+}
+</style>
+
 </head><body>
 
 <div class="ptjg-aa-energy" aria-hidden="true">
@@ -1556,19 +2319,27 @@ body:has(#css-lang-tr:checked) .count-box > span.lang-tr{
 <input type="radio" name="css-language" id="css-lang-ro">
 <input type="radio" name="css-language" id="css-lang-tr">
 </div>
-<header><div class="nav"><div class="brand"><span class="logo">PTJG</span>PTJG Contest ⚡️</div><details class="lang-menu">
+<header><div class="nav"><div class="brand"><span class="logo logo-magnet"><img src="data:image/png;base64,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" alt="PTJG magnet logo"></span>PTJG Contest ⚡️</div>
+<div class="nav-actions">
+  <details class="lang-menu">
 <summary>🌐 <span class="current-lang">
 <span class="lang-text lang-es">Español</span><span class="lang-text lang-en">English</span><span class="lang-text lang-de">Deutsch</span><span class="lang-text lang-fr">Français</span><span class="lang-text lang-pt">Português</span><span class="lang-text lang-ro">Română</span><span class="lang-text lang-tr">Türkçe</span>
 </span></summary>
 <div class="lang-options">
-<label for="css-lang-es">🇪🇸 Español</label>
-<label for="css-lang-en">🇬🇧 English</label>
-<label for="css-lang-de">🇩🇪 Deutsch</label>
-<label for="css-lang-fr">🇫🇷 Français</label>
-<label for="css-lang-pt">🇵🇹 Português</label>
-<label for="css-lang-ro">🇷🇴 Română</label>
-<label for="css-lang-tr">🇹🇷 Türkçe</label>
-</div></details></div></header>
+<label for="css-lang-es" onclick="document.getElementById(\'css-lang-es\').checked=true;this.closest(\'details\').open=false;event.preventDefault();event.stopPropagation();return false;">🇪🇸 Español</label>
+<label for="css-lang-en" onclick="document.getElementById(\'css-lang-en\').checked=true;this.closest(\'details\').open=false;event.preventDefault();event.stopPropagation();return false;">🇬🇧 English</label>
+<label for="css-lang-de" onclick="document.getElementById(\'css-lang-de\').checked=true;this.closest(\'details\').open=false;event.preventDefault();event.stopPropagation();return false;">🇩🇪 Deutsch</label>
+<label for="css-lang-fr" onclick="document.getElementById(\'css-lang-fr\').checked=true;this.closest(\'details\').open=false;event.preventDefault();event.stopPropagation();return false;">🇫🇷 Français</label>
+<label for="css-lang-pt" onclick="document.getElementById(\'css-lang-pt\').checked=true;this.closest(\'details\').open=false;event.preventDefault();event.stopPropagation();return false;">🇵🇹 Português</label>
+<label for="css-lang-ro" onclick="document.getElementById(\'css-lang-ro\').checked=true;this.closest(\'details\').open=false;event.preventDefault();event.stopPropagation();return false;">🇷🇴 Română</label>
+<label for="css-lang-tr" onclick="document.getElementById(\'css-lang-tr\').checked=true;this.closest(\'details\').open=false;event.preventDefault();event.stopPropagation();return false;">🇹🇷 Türkçe</label>
+</div></details>
+  <input type="checkbox" id="themeSwitch" class="theme-switch-input" aria-label="Cambiar tema">
+<label for="themeSwitch" class="theme-toggle" title="Cambiar tema">
+  <span class="theme-sun">☀︎</span>
+  <span class="theme-moon">☾</span>
+</label>
+</div></div></header>
 <section class="hero">
 <div class="live ptjg-livebar">
   <div class="ptjg-live-left">
@@ -1779,9 +2550,15 @@ body:has(#css-lang-tr:checked) .count-box > span.lang-tr{
       </div>
 
       <div class="css-tab-panel panel-w2">
-        <div class="winner-item"><span>🥇 Kai***15</span><b>+116,4%</b></div>
-        <div class="winner-item"><span>🥈 Sol***ade</span><b>+113,4%</b></div>
-        <div class="winner-item"><span>🥉 Jay*u</span><b>+102,0%</b></div>
+        <div class="winner-empty">
+          <span class="lang-text lang-es">Ganadores de Week 2: por anunciar.</span>
+          <span class="lang-text lang-en">Week 2 winners: to be announced.</span>
+          <span class="lang-text lang-de">Gewinner der Week 2: werden noch bekannt gegeben.</span>
+          <span class="lang-text lang-fr">Gagnants de la Week 2 : à annoncer.</span>
+          <span class="lang-text lang-pt">Vencedores da Week 2: por anunciar.</span>
+          <span class="lang-text lang-ro">Câștigătorii din Week 2: urmează să fie anunțați.</span>
+          <span class="lang-text lang-tr">Week 2 kazananları: yakında açıklanacak.</span>
+        </div>
       </div>
 
       <div class="css-tab-panel panel-w3">
@@ -1798,6 +2575,8 @@ body:has(#css-lang-tr:checked) .count-box > span.lang-tr{
         <div class="winner-item"><span>🥉 Tercero mensual</span><b>Pendiente</b></div>
       </div>
     </div>
+<div id="ptjg-month-history" class="ptjg-month-history"></div>
+
   </div>
 </section>
 
@@ -1936,5 +2715,319 @@ let s=document.getElementById("lang");s.onchange=()=>apply(s.value);apply("es");
   setInterval(updateCountdown, 1000);
 })();
 </script>
+
+
+<script id="ptjg-3m-auto-demo">
+(function(){
+  "use strict";
+
+  // SIMULATION ONLY.
+  // Season: 1 Nov 2026 -> 31 Jan 2027.
+  // Data changes deterministically by date so every visitor sees the same simulated state.
+  const SEASON_START = new Date(2026,10,1,0,0,0);
+  const SEASON_END   = new Date(2027,0,31,23,59,59);
+
+  const monthNames = {
+    es:["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"],
+    en:["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"],
+    de:["JANUAR","FEBRUAR","MÄRZ","APRIL","MAI","JUNI","JULI","AUGUST","SEPTEMBER","OKTOBER","NOVEMBER","DEZEMBER"],
+    fr:["JANVIER","FÉVRIER","MARS","AVRIL","MAI","JUIN","JUILLET","AOÛT","SEPTEMBRE","OCTOBRE","NOVEMBRE","DÉCEMBRE"],
+    pt:["JANEIRO","FEVEREIRO","MARÇO","ABRIL","MAIO","JUNHO","JULHO","AGOSTO","SETEMBRO","OUTUBRO","NOVEMBRO","DEZEMBRO"],
+    ro:["IANUARIE","FEBRUARIE","MARTIE","APRILIE","MAI","IUNIE","IULIE","AUGUST","SEPTEMBRIE","OCTOMBRIE","NOIEMBRIE","DECEMBRIE"],
+    tr:["OCAK","ŞUBAT","MART","NİSAN","MAYIS","HAZİRAN","TEMMUZ","AĞUSTOS","EYLÜL","EKİM","KASIM","ARALIK"]
+  };
+
+  const traderPool = [
+    "Mar***x7","Leo***FX","Nox***93","Kai***15","Sol***ade","Jay*u","Dax***355",
+    "Ali***24","Max***11","FX***Pro","Rai***88","Tom***FX","Sam***21","Lux***7",
+    "Neo***55","Oli***34","Zen***91","Ari***16","Val***FX","Noa***73"
+  ];
+
+  function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
+
+  function hash32(str){
+    let h = 2166136261 >>> 0;
+    for(let i=0;i<str.length;i++){
+      h ^= str.charCodeAt(i);
+      h = Math.imul(h,16777619);
+    }
+    return h >>> 0;
+  }
+  function rng(seed){
+    let x = seed >>> 0;
+    return function(){
+      x += 0x6D2B79F5;
+      let t = x;
+      t = Math.imul(t ^ (t >>> 15), t | 1);
+      t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function fmt1(v){
+    return (Math.round(v*10)/10).toFixed(1).replace(".",",");
+  }
+  function dateKey(d){
+    return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+  }
+  function monthKey(d){
+    return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0");
+  }
+  function monthStart(d){ return new Date(d.getFullYear(),d.getMonth(),1); }
+  function monthEnd(d){ return new Date(d.getFullYear(),d.getMonth()+1,0,23,59,59); }
+
+  // Four monthly competition blocks: 1-7, 8-14, 15-21, 22-end.
+  function weekBlockForDate(d){
+    const day = d.getDate();
+    if(day <= 7) return 1;
+    if(day <= 14) return 2;
+    if(day <= 21) return 3;
+    return 4;
+  }
+  function weekStart(d, w){
+    const startDay = w===1?1:w===2?8:w===3?15:22;
+    return new Date(d.getFullYear(),d.getMonth(),startDay,0,0,0);
+  }
+  function weekEnd(d, w){
+    const endDay = w===1?7:w===2?14:w===3?21:new Date(d.getFullYear(),d.getMonth()+1,0).getDate();
+    return new Date(d.getFullYear(),d.getMonth(),endDay,23,59,59);
+  }
+
+  function standingsFor(snapshotDate){
+    const d = new Date(snapshotDate.getFullYear(), snapshotDate.getMonth(), snapshotDate.getDate());
+    const wk = weekBlockForDate(d);
+    const ws = weekStart(d,wk);
+    const we = weekEnd(d,wk);
+    const totalDays = Math.max(1, Math.round((we-ws)/86400000)+1);
+    const elapsed = clamp(Math.round((d-ws)/86400000)+1,1,totalDays);
+    const progress = elapsed/totalDays;
+
+    const rand = rng(hash32("rank:"+dateKey(d)));
+    const entries = traderPool.slice(0,14).map((name,i)=>{
+      const baseStrength = 1 - i/18;
+      const noise = (rand()-0.5)*5.2;
+      const dailyShape = Math.sin((i+2)*(d.getDate()+1)*0.41)*1.2;
+      let ret = 4.5 + progress*(26*baseStrength + 7) + noise + dailyShape;
+      ret = clamp(ret, 2.8, 42.5);
+
+      let dd = 4.2 + rand()*9.3 + (1-baseStrength)*2.0;
+      dd = clamp(dd,3.2,17.8);
+
+      let trades = Math.max(2, Math.round(3 + progress*11 + rand()*5 - i*0.08));
+
+      return {name, ret, dd, trades};
+    });
+
+    entries.sort((a,b)=>b.ret-a.ret);
+    return entries.slice(0,10);
+  }
+
+  function participantsFor(d){
+    const days = clamp(Math.floor((d-SEASON_START)/86400000),0,92);
+    let total = 1442;
+    for(let i=0;i<=days;i++){
+      const r = rng(hash32("participants:"+i));
+      total += Math.floor(12 + r()*27);
+    }
+    return total;
+  }
+
+  function medal(n){ return n===1?"🥇":n===2?"🥈":n===3?"🥉":""; }
+
+  function setRanking(d){
+    const rows = Array.from(document.querySelectorAll(".rank-wide .row"));
+    const data = standingsFor(d);
+    rows.slice(0,10).forEach((row,i)=>{
+      const x = data[i];
+      if(!x) return;
+      const rank = row.querySelector(".rank");
+      const name = row.querySelector(".name");
+      const ret = row.querySelector(".ret");
+      const meta = row.querySelector(".rank-meta");
+      if(rank) rank.textContent = String(i+1);
+      if(name) name.innerHTML = x.name + (i<3?' <span class="medal">'+medal(i+1)+'</span>':'');
+      if(ret) ret.textContent = "+"+fmt1(x.ret)+"%";
+      if(meta) meta.innerHTML =
+        "<span>DD "+fmt1(x.dd)+"%</span>"+
+        "<span>Trades "+x.trades+"</span>"+
+        '<span class="status">ACTIVE</span>';
+    });
+    const pn = document.getElementById("pn");
+    if(pn) pn.textContent = participantsFor(d).toLocaleString("es-ES");
+  }
+
+  function langBlock(map){
+    return Object.entries(map).map(([k,v])=>'<span class="lang-text lang-'+k+'">'+v+'</span>').join("");
+  }
+
+  function pendingText(week){
+    return langBlock({
+      es:"Ganadores de Week "+week+": por anunciar.",
+      en:"Week "+week+" winners: to be announced.",
+      de:"Gewinner der Week "+week+": werden noch bekannt gegeben.",
+      fr:"Gagnants de la Week "+week+" : à annoncer.",
+      pt:"Vencedores da Week "+week+": por anunciar.",
+      ro:"Câștigătorii din Week "+week+": urmează să fie anunțați.",
+      tr:"Week "+week+" kazananları: yakında açıklanacak."
+    });
+  }
+
+  function monthlyPending(){
+    return langBlock({
+      es:"Ganadores mensuales: por anunciar.",
+      en:"Monthly winners: to be announced.",
+      de:"Monatliche Gewinner: werden noch bekannt gegeben.",
+      fr:"Gagnants mensuels : à annoncer.",
+      pt:"Vencedores mensais: por anunciar.",
+      ro:"Câștigătorii lunari: urmează să fie anunțați.",
+      tr:"Aylık kazananlar: yakında açıklanacak."
+    });
+  }
+
+  function winnersFromSnapshot(snapshotDate){
+    return standingsFor(snapshotDate).slice(0,3);
+  }
+
+  function renderWinnerRows(panel, winners){
+    panel.innerHTML = winners.map((x,i)=>
+      '<div class="winner-item"><span>'+medal(i+1)+' '+x.name+'</span><b>+'+fmt1(x.ret)+'%</b></div>'
+    ).join("");
+  }
+
+  function setWinnerTabs(d){
+    const panels = [1,2,3,4].map(n=>document.querySelector(".panel-w"+n));
+    const monthPanel = document.querySelector(".panel-month");
+    if(!panels.some(Boolean)) return;
+
+    // Tabs represent the CURRENT calendar month.
+    for(let w=1; w<=4; w++){
+      const end = weekEnd(d,w);
+      const panel = panels[w-1];
+      if(!panel) continue;
+
+      // Week is published only after its end.
+      if(d > end){
+        renderWinnerRows(panel, winnersFromSnapshot(end));
+      } else {
+        panel.innerHTML = '<div class="winner-empty">'+pendingText(w)+'</div>';
+      }
+    }
+
+    // Monthly winners publish on the first day of the following month.
+    if(monthPanel){
+      const me = monthEnd(d);
+      if(d > me){
+        renderWinnerRows(monthPanel, winnersFromSnapshot(me));
+      } else {
+        monthPanel.innerHTML = '<div class="winner-empty">'+monthlyPending()+'</div>';
+      }
+    }
+  }
+
+  // Because on Dec/Jan the current month panel would otherwise never be "closed",
+  // completed months are kept in an auto-generated history below.
+  function setMonthlyHistory(now){
+    const host = document.getElementById("ptjg-month-history");
+    if(!host) return;
+    host.innerHTML = "";
+
+    const months = [new Date(2026,10,1), new Date(2026,11,1), new Date(2027,0,1)];
+    months.forEach(ms=>{
+      const me = monthEnd(ms);
+      if(now <= me) return;
+
+      const top3 = winnersFromSnapshot(me);
+      const card = document.createElement("div");
+      card.className = "ptjg-history-card";
+      const monthLabel = ms.toLocaleDateString("es-ES",{month:"long",year:"numeric"});
+      card.innerHTML =
+        '<div class="ptjg-history-title">'+monthLabel+'</div>'+
+        top3.map((x,i)=>'<div class="ptjg-history-row"><span>'+medal(i+1)+' '+x.name+'</span><b>+'+fmt1(x.ret)+'%</b></div>').join("");
+      host.appendChild(card);
+    });
+  }
+
+  function updateLiveMonth(now){
+    const m = now.getMonth(), y = now.getFullYear();
+    const right = document.querySelector(".ptjg-live-right");
+    if(right){
+      right.innerHTML = langBlock({
+        es:monthNames.es[m]+" "+y+" · TEMPORADA 1",
+        en:monthNames.en[m]+" "+y+" · SEASON 1",
+        de:monthNames.de[m]+" "+y+" · SAISON 1",
+        fr:monthNames.fr[m]+" "+y+" · SAISON 1",
+        pt:monthNames.pt[m]+" "+y+" · TEMPORADA 1",
+        ro:monthNames.ro[m]+" "+y+" · SEZONUL 1",
+        tr:monthNames.tr[m]+" "+y+" · SEZON 1"
+      });
+    }
+
+    // Fallback for older live badge markup.
+    const liveKey = document.querySelector('[data-k="live"]');
+    if(liveKey && !right){
+      liveKey.innerHTML = langBlock({
+        es:"EN VIVO AHORA · CONCURSO "+monthNames.es[m]+" "+y,
+        en:"LIVE NOW · "+monthNames.en[m]+" "+y+" TRADING CONTEST",
+        de:"JETZT LIVE · TRADING-WETTBEWERB "+monthNames.de[m]+" "+y,
+        fr:"EN DIRECT · CONCOURS TRADING "+monthNames.fr[m]+" "+y,
+        pt:"AO VIVO · CONCURSO DE TRADING "+monthNames.pt[m]+" "+y,
+        ro:"LIVE ACUM · CONCURS TRADING "+monthNames.ro[m]+" "+y,
+        tr:"ŞİMDİ CANLI · "+monthNames.tr[m]+" "+y+" TRADING YARIŞMASI"
+      });
+    }
+  }
+
+  function simulationDate(){
+    // Uses real date while inside the season.
+    const now = new Date();
+    if(now < SEASON_START) return new Date(SEASON_START);
+    if(now > SEASON_END) return new Date(SEASON_END);
+    return now;
+  }
+
+  let lastDayKey = "";
+  function refresh(){
+    const now = simulationDate();
+    const key = dateKey(now);
+    if(key === lastDayKey) return;
+    lastDayKey = key;
+
+    updateLiveMonth(now);
+    setRanking(now);
+    setWinnerTabs(now);
+    setMonthlyHistory(now);
+  }
+
+  // First render and then keep checking so it changes automatically after midnight.
+  refresh();
+  setInterval(refresh, 60*1000);
+
+  // Expose a helper for testing specific dates in the browser console if needed.
+  window.PTJG_DEMO = {
+    renderDate:function(iso){
+      const d = new Date(iso+"T12:00:00");
+      lastDayKey="";
+      updateLiveMonth(d);
+      setRanking(d);
+      setWinnerTabs(d);
+      setMonthlyHistory(d);
+    }
+  };
+})();
+</script>
+
+
+<script id="ptjg-language-autoclose">
+(function(){
+  document.addEventListener("click", function(e){
+    var label = e.target.closest && e.target.closest(".lang-options label");
+    if (!label) return;
+    var menu = label.closest("details.lang-menu");
+    if (menu) setTimeout(function(){ menu.open = false; }, 0);
+  }, true);
+})();
+</script>
+
+
+
 
 </body></html>
